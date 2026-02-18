@@ -1,0 +1,28 @@
+Story Template:
+User Story Title:
+As Security, I need reusable ACL templates
+User Story Desctiption:
+So segmentation is consistent across sites.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+Enforcement Pipeline (RADIUS + dACL + CoA)
+Assiocated with Tasks:
+- Create ACL templates per device type
+- Standardize naming conventions
+- Maintain ACL library in repo
+- Build ACL test harness against lab switches

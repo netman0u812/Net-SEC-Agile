@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Create ticket categories (posture fail, unknown device, IoT drift)
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As ITSM, I need auto‑ticket creation for NAC events
+Associated Epic:
+Governance, Ownership, and ITSM Integration
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

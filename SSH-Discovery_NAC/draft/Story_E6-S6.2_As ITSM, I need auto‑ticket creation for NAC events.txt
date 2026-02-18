@@ -1,0 +1,28 @@
+Story Template:
+User Story Title:
+As ITSM, I need auto‑ticket creation for NAC events
+User Story Desctiption:
+So incidents are routed to the right teams.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+Governance, Ownership, and ITSM Integration
+Assiocated with Tasks:
+- Create ticket categories (posture fail, unknown device, IoT drift)
+- Integrate Forescout → ServiceNow API
+- Prepopulate enrichment context in tickets
+- Implement ticket assignment logic

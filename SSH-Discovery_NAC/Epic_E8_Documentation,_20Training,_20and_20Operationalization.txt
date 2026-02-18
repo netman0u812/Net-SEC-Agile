@@ -1,0 +1,61 @@
+
+Epic Title:
+Documentation, Training, and Operationalization
+
+Epic Description:
+Create full documentation, runbooks, training programs, and operational workflows required for long-term NAC sustainability.
+
+Creator: Martin, Michael J
+Status: Draft / Proposed
+Owner: Network Security Engineering
+
+Business Outcome:
+Enable support teams, engineers, and operations to confidently manage, troubleshoot, and evolve the NAC ecosystem.
+
+Problem Statement:
+NAC spans multiple teams and technologies; without structured documentation and training, operations will be inconsistent.
+
+Scope:
+- Produce end-to-end architecture documentation
+- Create runbooks for troubleshooting, onboarding, outages, and exceptions
+- Deliver staff training for support, engineering, and operations
+- Define operational workflows and escalation models
+
+Out of Scope:
+- Long-term knowledge management platform selection
+- Vendor certification programs
+
+Success Metrics / KPIs:
+- 100% runbooks completed and reviewed
+- All ops staff trained and certified internally
+- Mean time to resolution (MTTR) reduced by ≥ 30%
+
+Assumptions:
+- SMEs available for documentation validation
+- Training windows approved by management
+
+Dependencies:
+- All technical Epics (E1–E7)
+
+High-Level Deliverables:
+1. NAC Architecture Document
+2. Runbook Library
+3. Training Curriculum + Materials
+4. Operational Workflows & Escalation Pathways
+5. Knowledge Base (KB) Articles
+
+Child User Stories:
+- As support teams, we need runbooks.
+- As architects, we need complete documentation.
+
+Risks & Mitigations:
+- Outdated documents → Version control + ownership assignments.
+- Training gaps → Recurring quarterly refresh.
+
+Definition of Done:
+- All documentation produced, validated, and published
+- Staff trained and signed off
+- KB integrated into daily operations
+
+Notes:
+This Epic enables the NAC program to transition from project to steady-state operations.

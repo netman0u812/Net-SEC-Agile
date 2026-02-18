@@ -1,0 +1,38 @@
+Epic Template:
+Epic Title:
+Documentation, Training, and Operationalization
+Epic Description:
+Story 8.1 — As support teams, we need runbooks
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Scope:
+
+Out of Scope (Optional):
+
+Success Metrics / KPIs:
+
+Assumptions:
+
+Dependencies:
+
+High‑Level Deliverables:
+
+Child User Stories:
+As architects, we need complete documentation
+Risks & Mitigations:
+
+Stakeholders / Roles (Optional):
+
+Approvals Needed (Optional):
+
+Definition of Done:
+
+Notes / Additional Context:

@@ -1,0 +1,38 @@
+Epic Template:
+Epic Title:
+IPAM, CMDB, and SIEM Enrichment
+Epic Description:
+Story 7.1 — As IPAM/CMDB owners, we need accurate device inventories
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Scope:
+
+Out of Scope (Optional):
+
+Success Metrics / KPIs:
+
+Assumptions:
+
+Dependencies:
+
+High‑Level Deliverables:
+
+Child User Stories:
+As SIEM, I need enriched metadata for NAC events
+Risks & Mitigations:
+
+Stakeholders / Roles (Optional):
+
+Approvals Needed (Optional):
+
+Definition of Done:
+
+Notes / Additional Context:

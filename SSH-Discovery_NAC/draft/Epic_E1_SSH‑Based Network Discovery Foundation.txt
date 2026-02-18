@@ -1,0 +1,40 @@
+Epic Template:
+Epic Title:
+SSH‑Based Network Discovery Foundation
+Epic Description:
+Establish the reliable data‑collection foundation required for profiling, classification, and NAC decisioning.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Scope:
+
+Out of Scope (Optional):
+
+Success Metrics / KPIs:
+
+Assumptions:
+
+Dependencies:
+
+High‑Level Deliverables:
+
+Child User Stories:
+As a NAC engineer, I need a read‑only SSH collector to gather ARP/MAC/VLAN data
+As a network engineer, I need normalized CSVs for ARP/MAC/VLAN/Neighbors
+As a security architect, I need the collectors to run safely in production
+Risks & Mitigations:
+
+Stakeholders / Roles (Optional):
+
+Approvals Needed (Optional):
+
+Definition of Done:
+
+Notes / Additional Context:

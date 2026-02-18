@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Forward enriched classification CSV into SIEM
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As SIEM, I need enriched metadata for NAC events
+Associated Epic:
+IPAM, CMDB, and SIEM Enrichment
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

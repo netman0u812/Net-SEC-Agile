@@ -1,0 +1,39 @@
+Epic Template:
+Epic Title:
+Device‑Type Classification & Enrichment Engine
+Epic Description:
+Story 2.1 — As a NAC system, I need device classification based on multiple identity signals
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Scope:
+
+Out of Scope (Optional):
+
+Success Metrics / KPIs:
+
+Assumptions:
+
+Dependencies:
+
+High‑Level Deliverables:
+
+Child User Stories:
+As a NAC admin, I want enriched CSVs that map every IP/MAC to a device type
+As an engineer, I need the enrichment engine packaged for reuse
+Risks & Mitigations:
+
+Stakeholders / Roles (Optional):
+
+Approvals Needed (Optional):
+
+Definition of Done:
+
+Notes / Additional Context:

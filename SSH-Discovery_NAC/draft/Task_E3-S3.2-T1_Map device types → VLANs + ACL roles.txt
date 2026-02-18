@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Map device types → VLANs + ACL roles
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As Security, I need IoT/OT profiles based on device type
+Associated Epic:
+NAC Policy Framework (MAB‑Only)
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

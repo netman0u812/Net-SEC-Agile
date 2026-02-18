@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Produce README and operator documentation
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As an engineer, I need the enrichment engine packaged for reuse
+Associated Epic:
+Device‑Type Classification & Enrichment Engine
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

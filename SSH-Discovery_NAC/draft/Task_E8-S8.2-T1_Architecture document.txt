@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Architecture document
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As architects, we need complete documentation
+Associated Epic:
+Documentation, Training, and Operationalization
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

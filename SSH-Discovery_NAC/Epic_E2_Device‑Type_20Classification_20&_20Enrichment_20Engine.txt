@@ -1,0 +1,102 @@
+Epic Title:
+Device‑Type Classification & Enrichment Engine
+
+Epic Description:
+Deliver a classification and enrichment service that correlates multiple identity signals (ARP/MAC/VLAN/LLDP‑CDP neighbors, DHCP options, DNS names, OUI, passive traffic hints) to assign a stable device type (e.g., Windows workstation, IP phone, printer, camera, OT PLC). Output normalized, consumable CSVs/JSON for NAC decisions and CMDB enrichment, and package the service for reuse by adjacent platforms.
+
+Creator:
+Martin, Michael J
+
+Status:
+Draft / Proposed
+
+Owner:
+Network Security Engineering
+
+Business Outcome:
+Enable policy decisions and segmentation by providing trustworthy device‑type labels and key attributes for every observed MAC/IP pair. Improve NAC accuracy, reduce manual exceptions, and accelerate incident response and compliance reporting through enriched, consistent datasets.
+
+Problem Statement (Optional):
+Raw network‑discovery data lacks context and is insufficient for accurate NAC classification. Without a consistent, explainable classification process, policy becomes fragile and exception‑driven. An enrichment engine is needed to fuse multiple weak signals into a confident device‑type label.
+
+Scope:
+- Define a canonical device taxonomy and attribute model (e.g., device_type, confidence, vendor, platform, managed/unmanaged, headless/interactive)
+- Implement signal collectors/parsers: ARP/MAC/VLAN/Neighbor feeds from Epic E1; DHCP, DNS, OUI tables; optional passive netflow/PCAP metadata
+- Feature engineering and rule engine (deterministic rules first; ML later if needed)
+- Confidence scoring with explainability (which signals and rules drove the decision)
+- Normalized CSV/JSON outputs; schema versioning and contract tests
+- Packaging as a reusable container and Python library for downstream reuse
+- Data quality and drift monitoring
+
+Out of Scope (Optional):
+- Active fingerprinting (e.g., nmap probes)
+- Full ML model lifecycle/MLOps
+- Endpoint posture assessment (covered in Policy Epic)
+- Direct write‑back to CMDB (exposed as consumable feed; integration handled separately)
+
+Success Metrics / KPIs:
+- ≥ 95% of observed MACs assigned a device_type within 15 minutes of first sighting
+- ≥ 90% precision on gold‑standard validation set (sampled/verified by Network Engineering)
+- < 2% unknown classification rate for managed campus segments after 60 days
+- End‑to‑end enrichment pipeline latency ≤ 3 minutes at P50 and ≤ 10 minutes at P95
+- Contract tests pass on every schema change; zero breaking changes without version bump
+
+Assumptions:
+- Access to DNS logs/records, DHCP logs, and OUI database is available
+- Discovery feeds from Epic E1 are reliable and timely
+- A central data store and message bus (or file drop) are available for inputs/outputs
+
+Dependencies:
+- Epic E1 (SSH‑Based Network Discovery Foundation) for L2/L3 base signals
+- DNS/DHCP infrastructure for supplemental identity signals
+- Secrets management for any required API keys or credentials
+- SRE/Platform team for deployment and monitoring support
+
+High‑Level Deliverables:
+1. Canonical Taxonomy & Schema
+   - Device‑type dictionary, attributes, and confidence model
+2. Enrichment Engine (Rules‑First)
+   - Pluggable rules with test coverage and explainability metadata
+3. Input/Output Pipelines
+   - Ingest adapters for CSV/JSON feeds; output in normalized CSV/JSON
+4. Packaging & Reuse
+   - Container image and Python package with simple SDK
+5. Validation & QA Suite
+   - Labeled test fixtures; precision/recall evaluation and drift checks
+6. Ops/Observability
+   - Metrics, error budgets, dashboards, alerting
+
+Child User Stories:
+- As a NAC admin, I want enriched CSVs that map every IP/MAC to a device type so I can apply the right access policy.
+- As an engineer, I need the enrichment engine packaged for reuse so other platforms can consume it without coupling.
+- As Security, I want explainable classifications so auditors and responders can understand the basis for a decision.
+- As an SRE, I need health metrics and error budgets so I can maintain reliability at scale.
+
+Risks & Mitigations:
+- Conflicting or noisy signals → Use confidence scoring and rule precedence; maintain allow/deny overrides.
+- Data gaps from upstream feeds → Implement retries and backfill; maintain "unknown" with clear semantics.
+- Schema drift breaks consumers → Contract tests and semver; deprecation windows.
+- Overfitting of rules to specific vendors → Validate with diverse samples; maintain vendor‑agnostic heuristics.
+
+Stakeholders / Roles (Optional):
+- Network Security Engineering (Epic Owner)
+- NAC Platform Team
+- Network Engineering
+- Security Architecture
+- SRE / Platform Engineering
+- Compliance & Audit
+
+Approvals Needed (Optional):
+- Security Architecture approval of taxonomy and data retention
+- Network Engineering approval of validation approach
+- Change Management approval for production enablement
+
+Definition of Done:
+- Enrichment engine produces labeled outputs for ≥ 95% MACs with ≥ 90% precision on validation set
+- Outputs available as CSV/JSON with versioned schemas and documentation
+- Container and Python package published to internal registry with runbooks
+- Monitoring and alerting in place; dashboards reviewed with SRE
+- Integration completed with NAC ingestion flow
+
+Notes / Additional Context:
+This Epic converts raw discovery into actionable identity signals with explainability and reliability, forming the basis for scalable NAC policy without brittle per‑device exceptions.

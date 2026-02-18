@@ -1,0 +1,30 @@
+Story Template:
+User Story Title:
+As a network engineer, I need normalized CSVs for ARP/MAC/VLAN/Neighbors
+User Story Desctiption:
+So downstream systems consume the data consistently.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+SSH‑Based Network Discovery Foundation
+Assiocated with Tasks:
+- Normalize VLAN tables
+- Normalize MAC tables
+- Normalize ARP tables
+- Parse LLDP/CDP neighbors when available
+- Generate raw.json snapshot files
+- Generate _summary.json for execution status

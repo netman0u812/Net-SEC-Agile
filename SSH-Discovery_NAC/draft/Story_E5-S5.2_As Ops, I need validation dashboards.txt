@@ -1,0 +1,28 @@
+Story Template:
+User Story Title:
+As Ops, I need validation dashboards
+User Story Desctiption:
+So we can observe classification accuracy and NAC decisions.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+Staging → Pilot → Production Rollout
+Assiocated with Tasks:
+- Build classification accuracy dashboard
+- Build unknown-device heatmap
+- Add enforcement outcome metrics
+- Integrate with SIEM for alerting

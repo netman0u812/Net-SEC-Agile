@@ -1,0 +1,63 @@
+
+Epic Title:
+Staging → Pilot → Production Rollout
+
+Epic Description:
+Define and execute a phased NAC rollout model that moves from controlled staging → pilot sites → full global production. Provide validation workflows, dashboards, and site‑specific cutover playbooks.
+
+Creator: Martin, Michael J
+Status: Draft / Proposed
+Owner: Network Security Engineering
+
+Business Outcome:
+Enable safe NAC adoption through structured rollout stages that minimize operational disruption.
+
+Problem Statement:
+NAC enforcement cannot be deployed globally without controlled testing, pilot validation, and strict governance.
+
+Scope:
+- Build a staging environment mirroring production
+- Create pilot selection criteria
+- Site‑by‑site playbooks
+- Health validation dashboards
+- Rollback and fail‑safe procedures
+
+Out of Scope:
+- Long‑term product support SLAs
+- Legacy site modernization unrelated to NAC
+
+Success Metrics / KPIs:
+- ≥ 95% success on pilot validation tests
+- < 1% incidents attributable to NAC after production rollout
+- Site rollout time reduced by 50% between early and late phases
+
+Assumptions:
+- Staging environment has similar hardware and configurations
+- Pilot sites represent a statistically meaningful cross‑section
+
+Dependencies:
+- Enforcement Pipeline (Epic E4)
+- Policy Framework (Epic E3)
+
+High‑Level Deliverables:
+1. Staging Lab Architecture
+2. Cutover Playbooks
+3. Validation Dashboards
+4. Rollout Runbooks
+5. Site Acceptance Testing (SAT) Framework
+
+Child User Stories:
+- As Ops, I need validation dashboards.
+- As a site lead, I need site‑by‑site rollout workflows.
+
+Risks & Mitigations:
+- Uneven site readiness → Pre‑flight readiness checks.
+- Rollout regressions → Automated test harness + rollback steps.
+
+Definition of Done:
+- Staging, pilot, and production phases complete
+- All sites meeting steady‑state NAC KPIs
+- Rollout retrospectives completed
+
+Notes:
+This Epic ensures predictable, safe scaling of NAC enforcement.

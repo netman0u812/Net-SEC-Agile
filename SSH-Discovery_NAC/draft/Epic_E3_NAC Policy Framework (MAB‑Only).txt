@@ -1,0 +1,39 @@
+Epic Template:
+Epic Title:
+NAC Policy Framework (MAB‑Only)
+Epic Description:
+Story 3.1 — As Security, I need posture‑based decisions for managed endpoints
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Scope:
+
+Out of Scope (Optional):
+
+Success Metrics / KPIs:
+
+Assumptions:
+
+Dependencies:
+
+High‑Level Deliverables:
+
+Child User Stories:
+As Security, I need IoT/OT profiles based on device type
+As Security, I need a clear Unknown Device policy
+Risks & Mitigations:
+
+Stakeholders / Roles (Optional):
+
+Approvals Needed (Optional):
+
+Definition of Done:
+
+Notes / Additional Context:

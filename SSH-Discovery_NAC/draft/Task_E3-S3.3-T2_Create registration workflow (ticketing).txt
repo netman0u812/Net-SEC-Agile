@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Create registration workflow (ticketing)
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As Security, I need a clear Unknown Device policy
+Associated Epic:
+NAC Policy Framework (MAB‑Only)
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

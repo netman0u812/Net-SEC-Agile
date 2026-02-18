@@ -1,0 +1,29 @@
+Story Template:
+User Story Title:
+As a site lead, I need site‑by‑site rollout workflows
+User Story Desctiption:
+So each location is onboarded consistently.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+Staging → Pilot → Production Rollout
+Assiocated with Tasks:
+- Identify switch inventory per site
+- Run SSH collectors before rollout
+- Validate IoT/OT device list with local teams
+- Schedule enforcement windows
+- Perform post‑activation audit

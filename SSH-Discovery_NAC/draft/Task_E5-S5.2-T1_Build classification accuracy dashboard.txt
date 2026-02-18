@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Build classification accuracy dashboard
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As Ops, I need validation dashboards
+Associated Epic:
+Staging → Pilot → Production Rollout
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

@@ -1,0 +1,38 @@
+Epic Template:
+Epic Title:
+Enforcement Pipeline (RADIUS + dACL + CoA)
+Epic Description:
+Story 4.1 — As a network engineer, I need RADIUS enforcement working end‑to‑end
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Scope:
+
+Out of Scope (Optional):
+
+Success Metrics / KPIs:
+
+Assumptions:
+
+Dependencies:
+
+High‑Level Deliverables:
+
+Child User Stories:
+As Security, I need reusable ACL templates
+Risks & Mitigations:
+
+Stakeholders / Roles (Optional):
+
+Approvals Needed (Optional):
+
+Definition of Done:
+
+Notes / Additional Context:

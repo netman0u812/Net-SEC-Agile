@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Schedule enforcement windows
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As a site lead, I need site‑by‑site rollout workflows
+Associated Epic:
+Staging → Pilot → Production Rollout
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

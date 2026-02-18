@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Normalize ARP tables
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As a network engineer, I need normalized CSVs for ARP/MAC/VLAN/Neighbors
+Associated Epic:
+SSH‑Based Network Discovery Foundation
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

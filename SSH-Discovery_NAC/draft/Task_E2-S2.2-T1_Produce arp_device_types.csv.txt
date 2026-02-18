@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Produce arp_device_types.csv
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As a NAC admin, I want enriched CSVs that map every IP/MAC to a device type
+Associated Epic:
+Device‑Type Classification & Enrichment Engine
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

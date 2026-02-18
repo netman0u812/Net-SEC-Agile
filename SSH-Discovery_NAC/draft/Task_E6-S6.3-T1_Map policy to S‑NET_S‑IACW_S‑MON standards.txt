@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Map policy to S‑NET/S‑IACW/S‑MON standards
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As GRC, I need compliance alignment
+Associated Epic:
+Governance, Ownership, and ITSM Integration
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

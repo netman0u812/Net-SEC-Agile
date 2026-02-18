@@ -1,0 +1,39 @@
+Epic Template:
+Epic Title:
+Governance, Ownership, and ITSM Integration
+Epic Description:
+Story 6.1 — As Security Governance, I need a RACI model
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Scope:
+
+Out of Scope (Optional):
+
+Success Metrics / KPIs:
+
+Assumptions:
+
+Dependencies:
+
+High‑Level Deliverables:
+
+Child User Stories:
+As ITSM, I need auto‑ticket creation for NAC events
+As GRC, I need compliance alignment
+Risks & Mitigations:
+
+Stakeholders / Roles (Optional):
+
+Approvals Needed (Optional):
+
+Definition of Done:
+
+Notes / Additional Context:

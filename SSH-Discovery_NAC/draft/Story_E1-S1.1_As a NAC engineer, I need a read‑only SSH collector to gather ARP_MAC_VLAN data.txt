@@ -1,0 +1,30 @@
+Story Template:
+User Story Title:
+As a NAC engineer, I need a read‑only SSH collector to gather ARP/MAC/VLAN data
+User Story Desctiption:
+So that I can classify devices and generate ground‑truth inventory.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+SSH‑Based Network Discovery Foundation
+Assiocated with Tasks:
+- Develop Bash collector using cli_collect.sh
+- Validate command set (show_cmds.txt)
+- Build Python collector (nac_cli_collect.py) with TextFSM
+- Implement read‑only SSH credential policies
+- Validate performance and rate limiting
+- Store outputs in standardized folder structure (cli_out/<device>)

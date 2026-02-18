@@ -1,0 +1,117 @@
+Epic Title:
+SSH‑Based Network Discovery Foundation
+
+Epic Description:
+Build a secure, read‑only SSH‑based data‑collection framework capable of retrieving ARP, MAC, VLAN, and neighbor‑relationship data from enterprise switches, routers, and firewalls. This foundational capability will feed profiling, classification, and NAC decision engines with accurate, normalized, and continuously updated network‑discovery data.
+
+Creator:
+Martin, Michael J
+
+Status:
+Draft / Proposed
+
+Owner:
+Network Security Engineering
+
+Business Outcome:
+Provide a reliable, vendor‑agnostic, and security‑hardened mechanism for collecting ground‑truth Layer 2/Layer 3 data required for Zero Trust‑aligned NAC enforcement. With this Epic completed, downstream systems (NAC engines, classification engines, CMDB enrichment pipelines, and compliance dashboards) will have consistent and trustworthy topology and device‑presence data.
+
+Problem Statement (Optional):
+The organization currently lacks a uniform, automated, and secure method to gather authoritative L2/L3 network‑discovery information across heterogeneous infrastructure. Existing tools are inconsistent, often manual, and do not meet security requirements for production operation. A hardened SSH‑based collector is needed to establish a reliable discovery baseline.
+
+Scope:
+- Automated SSH login using read‑only operational accounts
+- Retrieval of ARP, MAC address tables, VLAN tables, and neighbor information (CDP/LLDP)
+- Normalization of data into vendor‑independent CSV outputs
+- Scheduling, error handling, and performance baselining
+- Secure execution architecture suitable for production networks (container or service unit)
+- Logging, auditing, and data‑quality validation
+
+Out of Scope (Optional):
+- Active scanning (Nmap, LLDP injection, etc.)
+- Configuration‑parsing (running‑config, startup‑config)
+- Credential‑management system deployment (assumes secrets vault exists)
+- Non‑SSH protocols (SNMP, NETCONF, RESTCONF)
+- NAC policy decisions themselves (this Epic focuses on data foundation)
+
+Success Metrics / KPIs:
+- ≥ 95% of targeted network devices successfully polled per collection cycle
+- < 2% malformed or unparseable records after normalization
+- End‑to‑end collection cycle completes within SLA (e.g., < 10 minutes per 500 devices)
+- Zero privileged commands issued during data collection
+- < 1% connection‑failure rate after initial device tuning
+- Data freshness SLA (e.g., updates every 5 minutes or better)
+
+Assumptions:
+- All in‑scope devices support SSH and required show‑commands
+- Read‑only operational accounts can be provisioned securely via a secrets manager
+- Network paths from collectors to devices are permitted
+- Device command outputs are stable enough to parse predictably
+- Central logging and storage infrastructure exists (object store or database)
+
+Dependencies:
+- IAM / Secrets Management for SSH credential rotation
+- Network Engineering for device access, parsing validation, and maintenance windows
+- Security Architecture for hardening requirements
+- NAC platform teams for integration specs and data‑format expectations
+- Monitoring / Observability teams for pipeline health metrics
+
+High‑Level Deliverables:
+1. Read‑Only SSH Collector Service
+   - Modular, plugin‑based vendor support (Cisco IOS/NX‑OS, Juniper, Arista, Palo Alto, etc.)
+   - Secure execution sandbox, rate limiting, and connection hygiene
+2. Normalized Data Model & CSV Schema
+   - Standardized ARP, MAC, VLAN, and neighbor schemas
+   - Versioning and backward compatibility rules
+3. Automated Collection Scheduler
+   - High‑frequency polling engine
+   - Parallelism tuning and timeout management
+4. Logging, Auditing, and Observability
+   - Connection success/failure logs
+   - Metrics export (e.g., Prometheus/Splunk/ELK)
+5. Device Coverage Matrix & Validation
+   - Command output samples
+   - Pass/fail parsing rules
+6. Security Hardening Package
+   - Principle‑of‑least‑privilege SSH role
+   - No configuration‑mode access enforcement
+   - Host‑validation and banner‑suppression checks
+
+Child User Stories:
+- As a NAC engineer, I need a read‑only SSH collector to gather ARP/MAC/VLAN data so that device presence and identity can be accurately determined.
+- As a network engineer, I need normalized CSVs for ARP/MAC/VLAN/Neighbors so downstream systems can consume a consistent schema.
+- As a security architect, I need the collectors to run safely in production so that no operational risk is introduced and security standards are met.
+- As a compliance analyst, I need auditable logs showing which devices were scanned and when to satisfy regulatory evidence requirements.
+- As an SRE, I need metrics and alerts on collector performance so I can detect failures proactively.
+
+Risks & Mitigations:
+- SSH lockouts or rate‑limits triggered → Implement connection pacing and exponential backoff.
+- Vendor parsing changes break pipelines → Maintain version‑based parsers, regression tests in CI.
+- Over‑collection impacts device CPU → Throttle concurrency; schedule off‑peak.
+- Credential rotation failures → Integrate with secrets manager and provide safe retry logic.
+- Incomplete device coverage → Maintain coverage matrix and structured onboarding process.
+
+Stakeholders / Roles (Optional):
+- Network Security Engineering (Epic Owner)
+- Network Engineering
+- Security Architecture
+- NAC Platform Team
+- SRE / Operations
+- Compliance & Audit
+
+Approvals Needed (Optional):
+- Security Architecture approval
+- Network Engineering approval for commands and polling frequency
+- IAM approval for SSH account creation
+- Change Management approval for production rollout
+
+Definition of Done:
+- Successful polling of ≥ 95% targeted devices using read‑only SSH
+- Normalized CSVs generated with validated schemas
+- Automated scheduler running with logging, error handling, and alerts
+- All collector components deployed in a hardened production environment
+- Documentation completed (runbooks, coverage matrix, parser guide)
+- Integration tested with NAC platform ingestion pipeline
+
+Notes / Additional Context:
+This Epic is the foundational capability for future NAC automation, device profiling, Zero Trust segmentation decisions, and automated asset classification. It replaces ad‑hoc scripts and inconsistent tooling with a standardized, secure, supportable pipeline.

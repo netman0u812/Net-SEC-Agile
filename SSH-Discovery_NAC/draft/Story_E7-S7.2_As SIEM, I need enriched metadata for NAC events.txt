@@ -1,0 +1,27 @@
+Story Template:
+User Story Title:
+As SIEM, I need enriched metadata for NAC events
+User Story Desctiption:
+So alerts are meaningful and can drive SOAR playbooks.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+IPAM, CMDB, and SIEM Enrichment
+Assiocated with Tasks:
+- Forward enriched classification CSV into SIEM
+- Correlate NAC decisions with device_type
+- Implement SOAR playbooks for rogue/camera drift

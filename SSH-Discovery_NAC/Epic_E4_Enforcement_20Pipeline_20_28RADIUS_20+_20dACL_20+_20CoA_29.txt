@@ -1,0 +1,63 @@
+
+Epic Title:
+Enforcement Pipeline (RADIUS + dACL + CoA)
+
+Epic Description:
+Implement a complete NAC enforcement pipeline using RADIUS authentication, downloadable ACLs (dACL), and Change of Authorization (CoA). Ensure that enforcement is consistent, scalable, vendor‑agnostic, and fully integrated with upstream classification and policy engines.
+
+Creator: Martin, Michael J
+Status: Draft / Proposed
+Owner: Network Security Engineering
+
+Business Outcome:
+Deliver reliable, deterministic enforcement so that device identity and policy decisions translate into real‑time authorization outcomes on the network edge.
+
+Problem Statement (Optional):
+RADIUS, dACL, and CoA behaviors vary widely across vendors and sites. A standardized enforcement pipeline is necessary for predictable NAC operation.
+
+Scope:
+- Standardize RADIUS authentication and authorization flows
+- Implement dACLs for dynamic least‑privilege enforcement
+- Implement CoA for real‑time reauthorization upon policy updates
+- Create validation tools and packet‑level troubleshooting workflows
+- Build reusable, vendor‑agnostic ACL templates
+
+Out of Scope:
+- 802.1X authentication
+- Posture agents or endpoint‑based enforcement
+
+Success Metrics / KPIs:
+- ≥ 98% successful RADIUS authorization across supported switch models
+- CoA application within ≤ 2 seconds at P95
+- Zero critical enforcement outages caused by template drift
+
+Assumptions:
+- NAC platform supports dACL and CoA delivery
+- Network hardware supports required authorization attributes
+
+Dependencies:
+- Device‑Type Classification Engine (Epic E2)
+- NAC Policy Framework (Epic E3)
+
+High‑Level Deliverables:
+1. Unified RADIUS Enforcement Blueprint
+2. Vendor‑Agnostic dACL Library
+3. CoA Service Modules and Validation Suite
+4. Enforcement Diagnostics Toolkit
+5. Switch Template Packages (Cisco/Arista/Juniper)
+
+Child User Stories:
+- As Security, I need reusable ACL templates so that enforcement remains consistent.
+- As a network engineer, I need RADIUS enforcement working end‑to‑end.
+
+Risks & Mitigations:
+- Vendor RADIUS inconsistencies → Maintain compatibility matrix.
+- ACL misconfigurations → Implement automated linting and pre‑deployment tests.
+
+Definition of Done:
+- All enforcement components validated on lab + pilot hardware
+- dACLs applied successfully across all device types
+- CoA behavior verified for policy changes
+
+Notes / Additional Context:
+This Epic operationalizes NAC decisions into real‑world network enforcement.

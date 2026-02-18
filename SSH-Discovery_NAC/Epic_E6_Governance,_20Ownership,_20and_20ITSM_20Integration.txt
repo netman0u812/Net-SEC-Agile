@@ -1,0 +1,62 @@
+
+Epic Title:
+Governance, Ownership, and ITSM Integration
+
+Epic Description:
+Define governance, roles, RACI, and ITSM workflows for NAC operations. Integrate NAC with ticketing, monitoring, compliance, and change‑management systems.
+
+Creator: Martin, Michael J
+Status: Draft / Proposed
+Owner: Network Security Engineering
+
+Business Outcome:
+A durable operational model with clear ownership, minimized confusion, and automated ticketing and compliance alignment.
+
+Problem Statement:
+NAC touches multiple teams (Network, Security, SOC, ITSM). Without a governance model, operational gaps lead to outages and untracked exceptions.
+
+Scope:
+- Develop NAC RACI model
+- Define ownership for policy, enforcement, exceptions, break‑glass, and outages
+- Integrate NAC logs + events with ITSM for auto‑ticketing
+- Map NAC processes to compliance requirements
+
+Out of Scope:
+- SOC tooling redesign
+- CMDB redesign
+
+Success Metrics / KPIs:
+- ≥ 90% NAC events auto‑ticketed within 60 seconds
+- Clear RACI adoption across all teams
+- Compliance reporting automated for NAC‑related controls
+
+Assumptions:
+- ITSM platform supports automated event ingestion
+- All teams agree to documented governance
+
+Dependencies:
+- Policy Framework (E3)
+- Enforcement + Rollout Epics
+
+High‑Level Deliverables:
+1. NAC RACI Model
+2. Governance Charter
+3. ITSM Auto‑Ticketing Integration
+4. Compliance Mapping
+5. Runbook + Escalation Workflows
+
+Child User Stories:
+- As ITSM, I need auto‑ticket creation for NAC events.
+- As GRC, I need compliance alignment.
+
+Risks & Mitigations:
+- ITSM ingestion issues → API monitoring and retry pipelines.
+- Team ownership conflicts → Steering committee arbitration.
+
+Definition of Done:
+- Governance charter signed
+- ITSM workflows live
+- RACI adopted across all teams
+
+Notes:
+This Epic establishes the long‑term operational guardrails for NAC.

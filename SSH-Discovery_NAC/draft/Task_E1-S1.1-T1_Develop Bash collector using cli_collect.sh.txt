@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Develop Bash collector using cli_collect.sh
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As a NAC engineer, I need a read‑only SSH collector to gather ARP/MAC/VLAN data
+Associated Epic:
+SSH‑Based Network Discovery Foundation
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

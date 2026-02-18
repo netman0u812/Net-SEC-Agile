@@ -1,0 +1,29 @@
+Story Template:
+User Story Title:
+As a security architect, I need the collectors to run safely in production
+User Story Desctiption:
+So discovery has zero operational impact.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+SSH‑Based Network Discovery Foundation
+Assiocated with Tasks:
+- Implement read‑only role & authorization
+- Set SSH session timeouts
+- Add command‑whitelisting
+- Add throttling (max concurrent sessions)
+- Document required network access

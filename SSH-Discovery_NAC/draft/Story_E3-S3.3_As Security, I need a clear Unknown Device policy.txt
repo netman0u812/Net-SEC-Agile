@@ -1,0 +1,27 @@
+Story Template:
+User Story Title:
+As Security, I need a clear Unknown Device policy
+User Story Desctiption:
+So unclassified devices do not gain unrestricted access.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+NAC Policy Framework (MAB‑Only)
+Assiocated with Tasks:
+- Define unknown → Quarantine VLAN
+- Create registration workflow (ticketing)
+- Implement alerts for rogue/unknown spikes

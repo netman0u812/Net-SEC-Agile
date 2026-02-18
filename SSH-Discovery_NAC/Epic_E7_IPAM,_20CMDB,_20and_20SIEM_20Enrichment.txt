@@ -1,0 +1,62 @@
+
+Epic Title:
+IPAM, CMDB, and SIEM Enrichment
+
+Epic Description:
+Integrate NAC discovery, classification, and enforcement outputs into IPAM, CMDB, and SIEM systems to ensure accurate inventories, enriched security telemetry, and complete lifecycle visibility.
+
+Creator: Martin, Michael J
+Status: Draft / Proposed
+Owner: Network Security Engineering
+
+Business Outcome:
+Achieve unified, authoritative device inventory and enhanced SIEM visibility, enabling better incident response, compliance reporting, and asset governance.
+
+Problem Statement:
+IPAM/CMDB systems often contain stale or incomplete records. NAC provides ground-truth identity and activity data that must be fed into these systems for accurate enterprise visibility.
+
+Scope:
+- Integrate device-type classification outputs with IPAM and CMDB
+- Provide enriched metadata (MAC, IP, VLAN, device_type, confidence, posture) to SIEM
+- Automate updates to reduce manual reconciliation
+- Establish data contracts and refresh intervals
+
+Out of Scope:
+- Full CMDB redesign
+- SIEM correlation rule authoring beyond enrichment inputs
+
+Success Metrics / KPIs:
+- ≥ 95% match rate between NAC inventory and IPAM/CMDB
+- ≥ 90% of NAC events enriched in SIEM within ≤ 60 seconds
+- Significant reduction in stale CMDB entries
+
+Assumptions:
+- APIs or ingestion methods exist for all target systems
+- NAC enrichment engine is stable and producing outputs
+
+Dependencies:
+- Device-Type Classification (Epic E2)
+- Enforcement and Policy Epics
+
+High-Level Deliverables:
+1. IPAM/CMDB Mapping Engine
+2. SIEM Enrichment Pipeline
+3. Data Quality Dashboards
+4. Data Contracts & Schemas
+5. Reconciliation Automation
+
+Child User Stories:
+- As IPAM/CMDB owners, we need accurate device inventories.
+- As SIEM, I need enriched metadata for NAC events.
+
+Risks & Mitigations:
+- Data inconsistencies → Implement reconciliation job + alerts.
+- API limits → batch updates + rate-control.
+
+Definition of Done:
+- IPAM/CMDB updates automated and validated
+- SIEM enrichment active with validated fields
+- Dashboards and data contracts published
+
+Notes:
+This Epic ensures enterprise systems share a single source of truth.

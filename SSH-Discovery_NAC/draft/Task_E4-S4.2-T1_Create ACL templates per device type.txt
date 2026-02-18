@@ -1,0 +1,28 @@
+Task Template:
+Task Title:
+Create ACL templates per device type
+Task Description:
+
+Creator:
+
+Status:
+
+Owner:
+
+Associated User Story:
+As Security, I need reusable ACL templates
+Associated Epic:
+Enforcement Pipeline (RADIUS + dACL + CoA)
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+
+Acceptance Criteria:
+
+Required Evidence / Artifacts (If Needed):
+
+Definition Of Done:
+
+Approvals Needed (Optional):
+
+Notes / Additional Context:

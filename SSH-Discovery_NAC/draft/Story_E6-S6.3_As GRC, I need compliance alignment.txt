@@ -1,0 +1,27 @@
+Story Template:
+User Story Title:
+As GRC, I need compliance alignment
+User Story Desctiption:
+So NAC controls support enterprise security standards.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+Governance, Ownership, and ITSM Integration
+Assiocated with Tasks:
+- Map policy to S‑NET/S‑IACW/S‑MON standards
+- Document compensating controls during MAB phase
+- Build periodic audit reports

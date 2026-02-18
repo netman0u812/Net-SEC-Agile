@@ -1,0 +1,39 @@
+Epic Template:
+Epic Title:
+Staging → Pilot → Production Rollout
+Epic Description:
+Story 5.1 — As a program lead, I need a phased enforcement model
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Scope:
+
+Out of Scope (Optional):
+
+Success Metrics / KPIs:
+
+Assumptions:
+
+Dependencies:
+
+High‑Level Deliverables:
+
+Child User Stories:
+As Ops, I need validation dashboards
+As a site lead, I need site‑by‑site rollout workflows
+Risks & Mitigations:
+
+Stakeholders / Roles (Optional):
+
+Approvals Needed (Optional):
+
+Definition of Done:
+
+Notes / Additional Context:

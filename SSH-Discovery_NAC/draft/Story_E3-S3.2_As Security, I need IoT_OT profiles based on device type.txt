@@ -1,0 +1,28 @@
+Story Template:
+User Story Title:
+As Security, I need IoT/OT profiles based on device type
+User Story Desctiption:
+So non‑managed devices receive least‑privilege access.
+Creator:
+
+Status:
+
+Owner:
+
+Business Outcome:
+
+Problem Statement (Optional):
+
+Acceptance Criteria:
+
+Definition of Done:
+
+Notes / Additional Context:
+
+Assiocated with Epic:
+NAC Policy Framework (MAB‑Only)
+Assiocated with Tasks:
+- Map device types → VLANs + ACL roles
+- Create IoT/OT VLAN & ACL catalog
+- Implement restricted dACLs (camera, printer, AP, OT)
+- Validate OT owner functional requirements

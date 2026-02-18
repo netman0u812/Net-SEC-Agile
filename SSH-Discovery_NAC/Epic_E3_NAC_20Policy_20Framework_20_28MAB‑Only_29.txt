@@ -1,0 +1,102 @@
+Epic Title:
+NAC Policy Framework (MAB‑Only)
+
+Epic Description:
+Design and implement an enterprise NAC policy framework that operates using MAC Authentication Bypass (MAB) only (no 802.1X), leveraging device‑type classifications and enrichment outputs to enforce least‑privilege access. Define posture‑based decisions for managed endpoints via integration signals (e.g., EDR/MDM presence via separate feeds) and create clear handling for IoT/OT and Unknown devices.
+
+Creator:
+Martin, Michael J
+
+Status:
+Draft / Proposed
+
+Owner:
+Network Security Engineering
+
+Business Outcome:
+Enable rapid, safe enforcement of network access controls in environments where 802.1X is not yet feasible, while laying the groundwork for a future 802.1X migration. Reduce lateral movement risk, standardize onboarding, and improve incident containment with deterministic, explainable policy.
+
+Problem Statement (Optional):
+Many sites and device categories cannot support 802.1X due to legacy endpoints, operational constraints, or vendor limitations. A MAB‑only framework is required to provide practical, risk‑relevant enforcement today without disrupting operations, while remaining upgradeable to 802.1X.
+
+Scope:
+- Define policy tiers for Managed, IoT/OT, Guest, Contractor, and Unknown devices
+- Express policy as reusable objects: VLAN assignments, ACLs/SGT/VRF mappings, DHCP options, DNS restrictions
+- Integrate with enrichment outputs from Epic E2 to map MAC→device_type→policy
+- Incorporate posture signals for managed endpoints (e.g., EDR/MDM registration status via API feed)
+- Implement enforcement on switching infrastructure using MAB (RADIUS MAC‑auth) and downloadable ACLs or static ACL references
+- Build exception workflow and temporary access tokens with automatic expiry
+- Reporting, auditing, and change control
+
+Out of Scope (Optional):
+- 802.1X supplicant deployment and EAP methods
+- Inline posture assessment agents (host‑based checks)
+- PKI onboarding and certificate lifecycle
+
+Success Metrics / KPIs:
+- ≥ 90% of endpoints correctly placed into intended policy tier on first attempt
+- < 1% manual exceptions after 60 days of steady‑state
+- Policy decision latency ≤ 2 seconds at P95 from RADIUS request to authorization
+- Zero critical incidents attributable to NAC enforcement changes during rollout
+- Mean time to contain (MTTC) for compromised device reduced by ≥ 50%
+
+Assumptions:
+- RADIUS infrastructure supports MAB and downloadable attributes (e.g., dACL/SGT)
+- Network devices support required authorization features and template commands
+- Enrichment feed (Epic E2) is timely and authoritative for device type
+- Change windows are available for staged rollouts and validation
+
+Dependencies:
+- Epic E2 (Device‑Type Classification & Enrichment Engine) for policy mapping
+- RADIUS/NAC platform configuration baselines
+- Network Engineering for template deployment and validation
+- Security Operations for exception handling and incident workflows
+
+High‑Level Deliverables:
+1. Policy Taxonomy & Decision Matrix
+   - Mapping of device_type and posture→ authorization result (VLAN/ACL/VRF/SGT)
+2. RADIUS / Switch Templates
+   - Standardized configs for key vendors; downloadable ACL or SGT policies
+3. Policy Engine & Integration
+   - Logic to consume enrichment feed and generate authorization profiles
+4. Exception & Break‑Glass Process
+   - Time‑bound tokens, approvals, and logging
+5. Rollout Plan & Playbooks
+   - Pilot, phased expansion, validation steps, rollback criteria
+6. Reporting & Audit Package
+   - Coverage, exceptions, policy hits, and drift reports
+
+Child User Stories:
+- As Security, I need IoT/OT profiles based on device type so non‑interactive devices receive least‑privilege network access.
+- As Security, I need a clear Unknown Device policy so unmanaged or new devices are contained without blocking essential operations.
+- As Security, I need posture‑based decisions for managed endpoints so compliant devices receive broader access and non‑compliant devices are restricted.
+- As Operations, I need a documented exception process so I can enable temporary access with automatic expiry and audit traceability.
+
+Risks & Mitigations:
+- MAC spoofing by adversaries → Bind MAC to switchport history, use anomaly detection, and restrict high‑risk segments; consider SGT with upstream validation.
+- Policy misclassification → Start in monitor/dry‑run, enforce gradually; require two‑person review for policy changes.
+- Device feature gaps (no dACL/SGT) → Provide static ACL fallback and VLAN containment.
+- Operational disruption during rollout → Canary deployments, rollback templates, and maintenance windows.
+
+Stakeholders / Roles (Optional):
+- Network Security Engineering (Epic Owner)
+- NAC / RADIUS Platform Team
+- Network Engineering
+- Security Operations Center (SOC)
+- Compliance & Audit
+- Site Operations / Field Services
+
+Approvals Needed (Optional):
+- Security Architecture approval of policy tiers and controls
+- Network Engineering approval of switch templates and dACL/SGT usage
+- Change Advisory Board (CAB) approval for phased rollouts
+
+Definition of Done:
+- Policy decision matrix approved and baselined in NAC platform
+- RADIUS and switch templates deployed to pilot; validation results meet success metrics
+- Integration with enrichment feed operational; posture signals ingested for managed endpoints
+- Exception workflow live with audit trails and expiry
+- Rollout playbooks published; monitoring dashboards active; post‑deployment review completed
+
+Notes / Additional Context:
+This Epic prioritizes pragmatic control with MAB while establishing the processes and artifacts (taxonomy, templates, playbooks) that will simplify a future migration to 802.1X.
