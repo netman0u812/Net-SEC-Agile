@@ -1,0 +1,63 @@
+Story Template:
+User Story Title:
+Decommission Legacy Non‑Production Network Security Hardware
+User Story Desctiption:
+Remove legacy, unused, or end‑of‑life network security hardware from non‑production environments and associated inventory systems to reduce technical debt and eliminate recurring audit findings caused by dormant assets remaining in CMDB and asset lists.
+Creator:
+Project Manager
+Status:
+In Progress
+Owner:
+Arthur Andersons
+Business Outcome:
+Eliminates recurring audit inquiries and evidence gaps tied to inactive
+hardware still present in inventory. Improves organizational security
+posture by removing unmanaged assets. Reduces technical debt from
+maintaining obsolete or unsupported systems. Enhances accuracy of CMDB,
+asset management, and lifecycle reporting. Saves cost and operational
+time associated with maintaining unused equipment.
+Problem Statement (Optional):
+"Audit teams routinely flag legacy non‑production network security
+appliances still listed in asset inventories. These devices are no
+longer functional or required, making it impossible to provide audit
+evidence (e.g., configuration, patch level, segmentation, ownership).
+This results in unnecessary findings and escalations. Formal
+decommissioning resolves these evidence gaps and aligns with long‑term
+technical debt reduction initiatives."
+Acceptance Criteria:
+"Given:
+
+Legacy non‑production network security hardware is present in CMDB,
+asset lists, or physically installed
+
+When:
+
+The device is verified as unused, unsupported, or no longer required for
+business or testing functions
+
+Then:
+
+The hardware is physically removed from racks and disconnected from
+network and power Logical references (IPs, firewall rules, VLANs,
+monitoring agents, DNS entries, routing objects) are removed CMDB and
+asset management records are updated to reflect decommissioning The
+device is removed from vulnerability scanning and lifecycle tools A
+decommission record is created with sufficient audit evidence
+Appropriate change management approvals are documented"
+Definition of Done:
+"- Approved CHG request for decommissioning
+- Hardware removed from physical environment
+- Logical artifacts removed across network, security, and monitoring systems
+- CMDB/asset records updated and validated removed
+- Audit evidence package created (before/after photos, config wipe
+  confirmation, CMDB update ticket, CHG ticket) 
+- Stakeholder notification"
+Notes / Additional Context:
+
+Assiocated with Epic:
+Non‑Production Network Security Hardware Decommissioning & Audit Remediation
+Assiocated with Tasks:
+- Remove SourceFire IDS Appliances (Legacy Linux‑Based) from Non‑Production
+- Remove Arista NDR Platform from Non‑Production Environments
+- Remove Fortinet IDS Appliances from Non‑Production Environments
+- Remove Legacy FireMon Appliances from Non‑Production Environments

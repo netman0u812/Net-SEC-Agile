@@ -1,0 +1,102 @@
+Epic Template:
+Epic Title:
+Non‑Production Network Security Hardware Decommissioning & Audit Remediation
+Epic Description:
+"This epic covers the identification, decommissioning, and removal of
+legacy, end‑of‑life (EOL), or unsupported network security hardware from
+non‑production environments. During PCI and FTC audits, multiple EOL and
+still-active devices were discovered, creating operational complexity
+and generating audit scrutiny when selected for evidence review. To
+resolve these issues, the team conducted an asset management search and
+identified several legacy platforms requiring retirement, including:
+
+- Fortinet IDS Sensors
+- Arista NDR Platform
+- Legacy FireMon Appliances (ops)
+- Legacy FireEye Appliances
+- EOL SourceFire IDS Appliances
+
+This epic ensures all legacy systems are systematically removed from
+physical environments, logical configurations, and inventory systems to
+reduce technical debt and eliminate audit complications."
+Creator:
+Project Manager
+Status:
+In Progress
+Owner:
+Project Manager
+Business Outcome:
+"Streamlined audit reviews by eliminating unsupported and unmanaged security devices from inventory.
+Reduced technical debt across InfoSec, Network Engineering, and Operational areas.
+Improved accuracy of CMDB and asset tracking, enabling better lifecycle management.
+Reduced operational complexity by removing unused or redundant platforms.
+Improved security posture by eliminating unmanaged or unmonitored attack surface."
+Problem Statement (Optional):
+During recent PCI and FTC audit cycles, auditors identified several EOL
+or unsupported network security platforms still active or inventoried in
+non‑production. These devices created difficulties during evidence
+review because they no longer had owners, lifecycle documentation,
+patching records, or active maintenance support. Their presence
+contributed to audit findings and unnecessary escalations. A
+comprehensive asset management review confirmed that these platforms are
+unused and should be fully decommissioned.
+Scope:
+This epic includes the physical and logical decommissioning of the
+following platforms in non‑production environments:
+
+- Fortinet IDS Sensors
+- Arista NDR Platform
+- Legacy FireMon appliances
+- Legacy FireEye appliances
+- EOL SourceFire IDS Appliances
+
+Scope includes:
+
+- Inventory and asset validation
+- Removal from DNS
+- Removal from monitoring (SolarWinds, NOC tools)
+- CMDB updates
+- Physical and/or virtual removal
+- Documentation and audit evidence capture
+- Change management approvals and tracking
+Out of Scope (Optional):
+"- Production environment assets (unless discovered as incorrectly categorized)
+- Replacement technology selection or architecture redesign
+- SOC workflow updates unrelated to device removal
+- Vendor contract termination management (handled separately)"
+Success Metrics / KPIs:
+"- 100% of identified legacy devices removed from non‑production environments
+- 100% CMDB and asset records updated to “Retired/Removed”
+- 100% DNS and monitoring entries removed
+- Zero audit findings tied to legacy devices in next PCI/FTC cycle
+- Reduction in non‑production security asset count by X% (determined after inventory)"
+Assumptions:
+"- No business processes rely on the legacy platforms
+- All required access (SNOW, CMDB, DNS, SolarWinds) is available
+- Network Engineering, InfoSec, and Asset teams provide required support
+- Audit team accepts standard evidence package created by the project"
+Dependencies:
+"- Change management approval windows
+- Rack access or remote/virtual decommissioning capability
+- CMDB ownership approvals
+- Monitoring team availability for system updates
+- DNS team availability for record removal"
+High‑Level Deliverables:
+"- Validated asset inventory for all legacy device platforms
+- Decommission plan and CHG request
+- Device removal tickets (one per device)
+- Removal of DNS, monitoring, and logical references
+- Updated CMDB/asset records
+- Audit‑ready evidence package
+- Final project closure summary delivered to Audit and Compliance"
+Child User Stories:
+Decommission Legacy Non‑Production Network Security Hardware
+Risks & Mitigations:
+
+Stakeholders / Roles (Optional):
+
+Approvals Needed (Optional):
+
+Definition of Done:
+
+Notes / Additional Context:

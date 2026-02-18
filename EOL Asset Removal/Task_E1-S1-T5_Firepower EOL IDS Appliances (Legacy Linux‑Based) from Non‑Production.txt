@@ -1,0 +1,62 @@
+Task Template:
+Task Title:
+Firepower EOL IDS Appliances (Legacy Linux‑Based) from Non‑Production
+Task Description:
+Decommission and remove all assiocated platform devices from non‑production, including physical/virtual assets, DNS, and monitoring tools. Ensure complete inventory reconciliation and capture audit evidence (closed SNOW tickets and before/after records).
+Creator:
+Project Manager
+Status:
+In Progress
+Owner:
+Arthur Andersons
+Associated User Story:
+Decommission Legacy Non‑Production Network Security Hardware
+Associated Epic:
+Non‑Production Network Security Hardware Decommissioning & Audit Remediation
+Pre‑Requisites / Dependencies:
+
+Task Steps:
+- Lookup the asset in  Cormant 
+- Open cable and locate with DC team
+- If the device is connected to a TAP, an additional Cable and Locate is needed for the TAP device.
+- Send netflow data to the closest CSNA - Change Request needed to update platform policy
+- Valadate that the device is not processing production traffic in Stealthwatch
+- Valadate that the device is not processing production traffic in Splunk
+- Pause Monitoring in Solarwinds
+- Open Remove Network Cable Request with DC Team
+- Open Remove Power and unrack with the DC Team
+- Remove from Solarwinds Monitoring (shjould remove from CMDB)
+- Remove A record in DNS
+- Remove PTR record in DNS
+- Colect Screenshots of RITM and save in Task Folder
+Acceptance Criteria:
+- All devices accounted for in a reconciled inventory list.
+- Individual SNOW removal tickets opened and closed for each device. 
+- DNS records removed and confirmed. 
+- SolarWinds monitoring entries removed
+- CMDB/asset records reflect Retired/Removed status. 
+- All required evidence attached saved in the repo with the task.
+Required Evidence / Artifacts (If Needed):
+Closed SNOW tickets:
+
+- Device removal (one per device)
+- DNS removal 
+- SolarWinds removal 
+
+Other Evidence That Could Be collected:
+
+- Before/after rack photos or VM console screenshots.
+- DNS console screenshots showing record deletion.
+- SolarWinds screenshots showing node removal.
+- CMDB snapshots showing state change and timestamps.
+- Disposal certificate (if hardware is leaving premises).
+Definition Of Done:
+- All devices physically/virtually removed and verified.
+- NS and SolarWinds entries removed and validated with screenshots.
+- CMDB/asset records updated to final state with timestamps.
+- All SNOW tickets closed and attached as evidence.
+- Stakeholder comms sent; audit tracker updated with links to artifacts.
+- No active alerts, DNS resolutions, or monitoring entries remain for the associated appliances
+Approvals Needed (Optional):
+
+Notes / Additional Context:
