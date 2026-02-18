@@ -1,0 +1,35 @@
+
+User Story Title: FTC Audit Item DRL 204
+
+User Story Description:
+Provide FTC auditors with evidence that Network Tap eazshdctapprdtw12-01 is compliant with the Minimum Security Baseline (MSB) standard for network devices, specifically regarding password rotation, authentication configurations, and account management controls.
+
+Creator:
+Status:
+Owner:
+
+Business Outcome:
+Ensure adherence to FTC regulatory expectations by demonstrating that all authentication- and password-related controls on the network tap meet or exceed MSB requirements. This supports successful closure of DRL 204 and reduces regulatory, operational, and security risk exposure.
+
+Problem Statement (Optional):
+FTC audit reviewers identified DRL 204 requiring proof that the Network Tap eazshdctapprdtw12-01 complies with password rotation and account governance requirements. Evidence must be collected, validated, and submitted to affirm compliance.
+
+Acceptance Criteria:
+- Documentation confirming password rotation policy applied to eazshdctapprdtw12-01.
+- Evidence of enforced MSB-compliant password settings (length, complexity, rotation, failed login thresholds).
+- Confirmation that only authorized administrative accounts exist and that inactive or legacy accounts are removed or disabled.
+- Screenshot evidence validating applied configurations.
+- Evidence package aligned to FTC audit submission format.
+
+Definition of Done:
+- Closure of 2026 FTC Assessment - Network Tap eazshdctapprdtw12-01 Authentication and Password Configurations (DRL 204).
+- Screenshots and config extracts demonstrating password and authentication compliance stored in the audit repository.
+- Peer review by Security Engineering completed.
+- Audit team confirms acceptance of evidence.
+
+Notes / Additional Context:
+This user story supports the broader 2026 FTC Assessment and ensures compliance with network security baseline standards.
+
+Associated with Epic: Audit_2026
+Associated with Tasks:
+

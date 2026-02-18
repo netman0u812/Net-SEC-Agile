@@ -1,0 +1,42 @@
+
+User Story Title: Remediation regarding the implementation of IDS/IDP on passive interfaces instead of as in-line enforcement devices
+
+User Story Description:
+FND-19705 identifies a compliance and architectural gap resulting from the required bypass of the Fortinet devices in the Scottsdale environment due to MAC flapping events earlier in the year. These instability issues prevented the firewalls from operating in in-line enforcement mode, forcing the controls to function only passively. Until the underlying MAC flapping condition is fully resolved with support from the network engineering teams and the vendor, the devices cannot be placed back in-line without risking a repeat of the previous service outage.
+
+This remediation effort transitions IDS/IDP enforcement to the Palo Alto firewall platforms—upgraded and configured to enforce threat-prevention policies consistently across SHEA, Rhode Island, Windsor, and Middletown—ensuring compensating control coverage while the Fortinet issues remain outstanding.
+
+Creator:
+Status:
+Owner:
+
+Business Outcome:
+Restore full IDS/IDP enforcement capabilities using stable, supported, and inline-capable Palo Alto platforms, closing audit finding FND-19705 and ensuring regulatory compliance, reduced operational risk, and consistent threat-prevention protections.
+
+Problem Statement (Optional):
+The existing Fortinet devices cannot be relied upon for inline enforcement due to an unresolved MAC flapping defect. Keeping them bypassed leaves a monitoring-only control gap, violating audit requirements for active intrusion detection and prevention. A compensating control path via Palo Alto firewalls must be implemented, validated, and documented.
+
+Acceptance Criteria:
+- Palo Alto firewalls upgraded in SHEA, RI, Windsor, and Middletown.
+- IDS/IDP security profiles and threat-prevention templates configured per standards.
+- Firewall rules applying IDS/IDP templates validated in production.
+- Palo Alto firewalls confirmed operating inline with enforcement enabled.
+- Evidence provided including:
+  - Screenshots of completed CM tickets for all firewall upgrades.
+  - Screenshots of IDS/IDP templates and rule enforcement.
+- Control documentation updated.
+
+Definition of Done:
+- All acceptance criteria met.
+- Evidence submitted to the PIC Audit repository.
+- Peer review by Security Engineering completed.
+- Audit stakeholders sign off on closure of FND-19705.
+- No service-impacting anomalies detected for ≥14 days.
+- Runbooks and architectural documentation updated.
+
+Notes / Additional Context:
+This story represents a compensating control measure while Fortinet instability is being resolved. Full remediation depends on Network Engineering and vendor coordination.
+
+Associated with Epic: Audit_2026
+Associated with Tasks:
+

@@ -1,0 +1,35 @@
+
+User Story Title: FTC Audit Item DRL 205
+
+User Story Description:
+Provide FTC auditors with evidence that Network Tap eazshdctapprdtw12-01 has undergone a full Minimum Security Baseline (MSB) Check in accordance with the MSB Check Policy and has successfully passed all baseline control requirements.
+
+Creator:
+Status:
+Owner:
+
+Business Outcome:
+Demonstrate compliance with the FTC audit requirements by confirming that the Network Tap eazshdctapprdtw12-01 meets all MSB baseline controls, ensuring regulatory adherence, proper device governance, and reduced operational and security risk exposure.
+
+Problem Statement (Optional):
+FTC Audit Item DRL 205 requires verified proof that the network tap has completed the MSB Check process and passed all applicable MSB controls. Evidence must be captured, validated, and formally submitted to auditors.
+
+Acceptance Criteria:
+- Completed MSB Check for eazshdctapprdtw12-01, aligned to the current MSB Check Policy.
+- Evidence confirming MSB control compliance for all applicable categories (authentication, password requirements, logging, configuration hardening, access control, and patch/firmware standards).
+- Screenshots or extracts demonstrating the MSB Check output and compliance findings.
+- Confirmation that any previously identified deviations are remediated or formally risk accepted.
+- Evidence package assembled in the FTC audit submission format.
+
+Definition of Done:
+- Closure of 2026 FTC Assessment - Network Tap eazshdctapprdtw12-01 MSB Check (DRL 205).
+- MSB Check results, screenshots, and supporting documentation uploaded to the audit repository.
+- Peer review by Security Engineering completed.
+- Audit team validates and accepts evidence.
+
+Notes / Additional Context:
+This user story supports the broader 2026 FTC Assessment and ensures the network tap platform is fully validated against required MSB security controls.
+
+Associated with Epic: Audit_2026
+Associated with Tasks:
+
