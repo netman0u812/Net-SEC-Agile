@@ -1,0 +1,32 @@
+Task Title:
+Authorization & RBAC Mapping
+
+Task Description:
+Map Slack user to SecureChange analyst role (via email/UPN). Enforce on modal open.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Identity
+
+Associated User Story:
+Story 2 – View request details in Slack
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Directory/IdP access; SecureChange analyst roster
+
+Task Steps:
+1) Build mapping; 2) Cache; 3) Enforce checks; 4) Log decisions; 5) Negative testing.
+
+Acceptance Criteria:
+Unauthorized users receive masked/limited view; all auth decisions logged to Splunk.
+
+Definition Of Done:
+RBAC gates validated in UAT.

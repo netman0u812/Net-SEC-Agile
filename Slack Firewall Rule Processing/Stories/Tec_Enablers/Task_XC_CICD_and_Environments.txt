@@ -1,0 +1,32 @@
+Task Title:
+CI/CD & Environments
+
+Task Description:
+Pipeline with unit/integration tests, security scans (SAST/DAST), and blue/green or canary deploy.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Platform
+
+Associated User Story:
+Cross-cutting (applies to all stories)
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+CI platform; artifact repo; envs provisioned
+
+Task Steps:
+1) Build pipeline; 2) Add tests; 3) Add security scans; 4) Deploy to Dev/UAT/Prod; 5) Rollback automation.
+
+Acceptance Criteria:
+Reproducible builds; rollback <10 minutes.
+
+Definition Of Done:
+Green pipeline across environments.

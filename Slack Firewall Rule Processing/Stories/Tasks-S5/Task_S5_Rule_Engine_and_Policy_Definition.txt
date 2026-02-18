@@ -1,0 +1,32 @@
+Task Title:
+Rule Engine & Policy Definition
+
+Task Description:
+Implement rules (YAML/JSON) with versioning, test harness, and explainability.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Policy Automation
+
+Associated User Story:
+Story 5 – Automate common rule requests with Slack transparency
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Governance inputs; precedent library
+
+Task Steps:
+1) Define initial rule set; 2) Build engine; 3) Unit tests per rule; 4) Canary rollout; 5) Kill switch.
+
+Acceptance Criteria:
+Unit tests pass; explainability text generated for each decision.
+
+Definition Of Done:
+Engine deployed; versioned rules in repo.

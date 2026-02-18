@@ -1,0 +1,39 @@
+User Story Title:
+Send requester email from Slack
+
+User Story Description:
+As a firewall rule analyst, I want to send an email from within Slack to request clarifications or propose remediations.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Integrations
+
+Business Outcome:
+Faster clarifications; fewer handoffs; better user experience.
+
+Problem Statement (Optional):
+Analysts must pivot to email tools and copy/paste details, causing delay and errors.
+
+Acceptance Criteria:
+1. Slack modal for composing email (To pre-filled from ticket requester; CC optional; subject template; body).
+2. Email sent via Microsoft Graph (preferred) or SMTP relay; message ID captured.
+3. Email summary logged to Splunk; copy added as comment to SecureChange ticket.
+4. Standard templates available (policy violation, missing justification, alternative solution).
+5. RBAC enforced; rate limits respected; PII redaction available.
+
+Definition of Done:
+- Email action available; message deliverability validated; secure logging.
+
+Notes / Additional Context:
+Support canned responses and variable substitution (ticket ID, requester name, etc.).
+
+Associated with Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Associated with Tasks:
+See task files prefixed with Task_S4_*

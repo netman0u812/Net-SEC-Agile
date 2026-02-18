@@ -1,0 +1,119 @@
+Epic Title: Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+Status: 
+
+Epic Description:
+Notifying analysts in Slack when a rule-add request needs review,
+Reformatting and streaming request context into Splunk for analysis,
+Enabling in‑Slack actions to capture clarifications and make decisions
+(Approve / Deny / Request Info), and Sending optional user email from
+Slack to accelerate remediation and reduce cycle time. The solution will
+reduce manual login/filtering in SecureChange, lower manual review
+percentage through automation of common patterns, and shorten review
+time using targeted alerting.
+
+Creator:
+Project Manager
+
+Status:
+
+Owner:
+All Team Members
+
+Business Outcome:
+- Reduce manual review percentage from 79.5% to <50%.
+- Reduce median time-to-first-touch and time-to-decision for flagged requests by ≥30%.
+- Improve auditability and consistency of rule A3decisions through structured data capture and Splunk analytics.
+
+Problem Statement (Optional):
+- Context: Manual review of “insecure” rule requests requires analysts to log into SecureChange and filter for review tickets.
+
+Scope:
+- Slack App (Bot) for alerts, interactive reviews, and email send trigger.
+- Eventing from Tufin SecureChange to Slack via backend service.
+
+Out of Scope (Optional):
+- Core policy computation changes in SecureTrack/optimizer beyond API consumption.
+- Bulk historical backfill of past tickets (unless explicitly added).
+- End-user submissions interface changes (beyond email from Slack to requester).
+- SSO lifecycle or Slack workspace governance beyond app installation and scopes.
+
+Success Metrics / KPIs:
+% of requests requiring manual review → <50% within 2 quarters.
+
+Median time-to-first-analyst-touch for flagged requests → -30%.
+
+Median time-to-decision for flagged requests → -30%.
+
+% of “common” patterns handled automatically → ≥25% by phase 2.
+
+Slack action adoption (unique analysts interacting weekly) → ≥80% of analyst team.
+
+Assumptions:
+Tufin SecureChange exposes APIs/webhooks (or polling) to retrieve
+relevant ticket data and post decisions. Slack Enterprise Grid or
+Workspace permits custom app with interactive components. Splunk HEC
+(HTTP Event Collector) is available with appropriate index and
+sourcetype. Email can be sent via Microsoft Graph (app reg) or SMTP
+relay with service principal or technical account. Firewall governance
+RACI remains unchanged; this is tooling enablement.
+
+Dependencies:
+Tufin SecureChange API credentials and environment access.
+
+Slack App registration, OAuth scopes, signing secret, and approval by Slack admins.
+
+Splunk HEC token, index, and network ACLs.
+
+Identity / RBAC mapping for Slack users ↔ SecureChange analysts.
+
+Email channel (Graph or SMTP) service account and app registration.
+
+Secrets management (e.g., Azure Key Vault, HashiCorp Vault) and CI/C
+
+High‑Level Deliverables:
+Slack App with Block Kit alerts and interactive decision forms.
+
+Backend service (microservice/lambda) integrating Tufin ↔ Slack ↔ Splunk ↔ Email.
+
+Splunk data model & dashboards for review support and telemetry.
+
+Automation rule engine for “common” requests (phase 2).
+
+Audit logs & evidence artifacts (Splunk) for SOX/ISO controls.
+
+Runbooks and support docs.
+
+Child User Stories:
+S1: Slack alert on new/flagged SecureChange request.
+
+Risks & Mitigations:
+- 	Risk: Slack outages or message delivery delays.
+	Mitigation: Retry + dead-letter queue; parallel email fallback; status dashboard.
+-	Risk: Incorrect approvals via Slack by unauthorized users.
+	Mitigation: RBAC check (Slack user ↔ analyst role) + secondary confirmation for high-risk changes.
+-	Risk: Payload PII/PHI in Splunk.
+	Mitigation: Field-level filtering/redaction; encryption in transit; index access controls.
+-	Risk: API rate limits (Tufin/Slack/Graph).
+	Mitigation: Backoff, batching, idempotent design.
+-	Risk: Automation false positives/negatives.
+	Mitigation: Start in shadow mode, measure drift, gradual rollout with kill-switch.
+
+Stakeholders / Roles (Optional):
+Product Owner (Firewall Governance), SecEng Team, SOC (FYI), Network Ops, IT Messaging (Graph/SMTP), Slack Admins, Audit/Compliance.
+
+Approvals Needed (Optional):
+Slack app approval, Tufin API access approval, Splunk index creation, Email app registration/security review.
+
+Definition of Done:
+All user stories accepted in prod.
+
+KPIs instrumented and observable in Splunk dashboards.
+
+Runbooks (L1/L2), on-call alerts, and support handoff complete.
+
+Security review complete (threat model, secrets, logging).
+
+DR plan & rollback playbooks validated in lower env.
+
+Notes / Additional Context:
+Phase 2 automation can extend to programmatic policy checks and exceptions governance.

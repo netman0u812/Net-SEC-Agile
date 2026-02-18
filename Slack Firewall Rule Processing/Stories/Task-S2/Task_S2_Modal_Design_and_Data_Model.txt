@@ -1,0 +1,32 @@
+Task Title:
+Modal Design & Data Model
+
+Task Description:
+Define Block Kit modal layout and data schema for detailed view.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – UX/Integrations
+
+Associated User Story:
+Story 2 – View request details in Slack
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Story 1 Slack alerting in place
+
+Task Steps:
+Wireframes → JSON schema → Sample payloads → Product Owner approval.
+
+Acceptance Criteria:
+Finalized schema versioned; wireframe approved by PO.
+
+Definition Of Done:
+Design artifacts stored in repo; sample payloads ready for dev.

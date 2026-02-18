@@ -1,0 +1,32 @@
+Task Title:
+Decision Action Handlers
+
+Task Description:
+Implement Slack interactivity handlers for Approve/Deny.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Integrations
+
+Associated User Story:
+Story 3 – Approve/Deny from Slack
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Story 2 modal available; Tufin API credentials
+
+Task Steps:
+Build handlers → Validate inputs → Call Tufin API → Update Slack thread → Log to Splunk → Idempotency token.
+
+Acceptance Criteria:
+E2E decision time ≤3s typical; errors surfaced in ephemeral messages.
+
+Definition Of Done:
+Happy-path and failure-path tests pass; deployed to UAT.

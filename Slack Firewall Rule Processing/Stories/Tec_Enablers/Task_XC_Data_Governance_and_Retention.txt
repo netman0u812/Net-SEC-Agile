@@ -1,0 +1,32 @@
+Task Title:
+Data Governance & Retention
+
+Task Description:
+Field-level redaction, retention alignment, access controls, audit queries.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Compliance
+
+Associated User Story:
+Cross-cutting (applies to all stories)
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Compliance requirements
+
+Task Steps:
+1) Define redaction rules; 2) Implement transformers; 3) Configure retention; 4) Validate access controls; 5) Audit queries.
+
+Acceptance Criteria:
+Approved by Compliance.
+
+Definition Of Done:
+Controls validated; evidence stored.

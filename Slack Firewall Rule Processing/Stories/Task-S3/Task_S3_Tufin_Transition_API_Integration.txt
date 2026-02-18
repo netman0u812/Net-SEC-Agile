@@ -1,0 +1,32 @@
+Task Title:
+Tufin SecureChange Transition API Integration
+
+Task Description:
+Map Slack actions to SecureChange workflow transitions and reason codes.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Integrations
+
+Associated User Story:
+Story 3 – Approve/Deny from Slack
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Tufin API docs; test environment
+
+Task Steps:
+1) Document transition matrix; 2) Implement client; 3) Mocked tests; 4) Integration tests; 5) Error handling and retries.
+
+Acceptance Criteria:
+Correct transitions applied; reason codes required and stored.
+
+Definition Of Done:
+Works in UAT without manual intervention; audit trail complete.

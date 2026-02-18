@@ -1,0 +1,32 @@
+Task Title:
+Ticket Comment Sync
+
+Task Description:
+Post email summary back to SecureChange ticket as comment with timestamp and analyst identity.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Integrations
+
+Associated User Story:
+Story 4 – Send requester email from Slack
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+SecureChange API client; email integration
+
+Task Steps:
+1) Implement comment API call; 2) Handle retries; 3) Idempotency; 4) Unit/integration tests.
+
+Acceptance Criteria:
+Comments visible in SecureChange UI with correct metadata.
+
+Definition Of Done:
+Sync reliable with <0.5% failure rate.

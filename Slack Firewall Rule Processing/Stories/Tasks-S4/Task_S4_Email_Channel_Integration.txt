@@ -1,0 +1,32 @@
+Task Title:
+Email Channel Integration (Graph or SMTP)
+
+Task Description:
+Implement email sender using Graph app registration (Mail.Send) or SMTP relay.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Messaging Integration
+
+Associated User Story:
+Story 4 – Send requester email from Slack
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Tenant admin/app registration or SMTP creds
+
+Task Steps:
+App reg → Client secret/cert → Token retrieval → Send API → Error handling.
+
+Acceptance Criteria:
+DKIM/SPF pass; email lands not in spam; messageId captured.
+
+Definition Of Done:
+End-to-end email confirmed; bounce handling implemented.

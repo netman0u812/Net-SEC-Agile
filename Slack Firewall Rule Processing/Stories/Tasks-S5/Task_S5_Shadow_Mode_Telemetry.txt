@@ -1,0 +1,32 @@
+Task Title:
+Shadow Mode Telemetry
+
+Task Description:
+Run rules in observe-only mode; compare to human decisions for at least 2 weeks.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Policy Automation
+
+Associated User Story:
+Story 5 – Automate common rule requests with Slack transparency
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Rule engine operational in shadow mode
+
+Task Steps:
+1) Capture human decisions; 2) Compute mismatch rate; 3) Report weekly; 4) Adjust rules.
+
+Acceptance Criteria:
+Report on mismatch rate; thresholds for Go/No‑Go defined.
+
+Definition Of Done:
+Shadow-mode report approved by governance.

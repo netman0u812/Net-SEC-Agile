@@ -1,0 +1,39 @@
+User Story Title:
+Automate common rule requests with Slack transparency
+
+User Story Description:
+As a firewall rule analyst, I want common requests to be auto-evaluated and, when safe, auto-approved with Slack transparency to minimize manual review and TTC.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Policy Automation
+
+Business Outcome:
+Reduce manual review volume and cycle time; increase consistency.
+
+Problem Statement (Optional):
+High volume of predictable requests consumes scarce analyst bandwidth.
+
+Acceptance Criteria:
+1. Define automation rules for common patterns (e.g., known app ports, intra‑zone, low risk, existing precedent).
+2. Rules run deterministically with explainability text; decisions logged.
+3. Auto-approved/auto-denied tickets posted to Slack as informational with override option (grace period).
+4. Shadow mode available to measure impact before enabling enforcement.
+5. KPI tracking split: manual vs automated; false‑positive/negative metrics.
+
+Definition of Done:
+- Rules engine live; shadow → enforce rollout documented; KPIs in Splunk.
+
+Notes / Additional Context:
+Start with a narrow rule set and expand based on evidence.
+
+Associated with Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Associated with Tasks:
+See task files prefixed with Task_S5_*

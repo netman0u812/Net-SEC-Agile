@@ -1,0 +1,32 @@
+Task Title:
+Threat Modeling & Security Review
+
+Task Description:
+STRIDE/PASTA-lite model; focus on authZ, replay, webhook signing, least privilege; pen test where applicable.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Security
+
+Associated User Story:
+Cross-cutting (applies to all stories)
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Design artifacts; app endpoints
+
+Task Steps:
+1) Threat model workshop; 2) Document risks; 3) Mitigations; 4) Pen test (if needed); 5) Sign-off.
+
+Acceptance Criteria:
+Findings addressed or accepted; residual risk documented.
+
+Definition Of Done:
+Security approval complete.

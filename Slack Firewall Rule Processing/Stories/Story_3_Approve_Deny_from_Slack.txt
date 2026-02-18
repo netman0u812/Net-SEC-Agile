@@ -1,0 +1,40 @@
+User Story Title:
+Approve/Deny from Slack
+
+User Story Description:
+As a firewall rule analyst, I want to approve/deny from Slack to progress implementation efficiently.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Integrations
+
+Business Outcome:
+Shorter time-to-decision; improved throughput.
+
+Problem Statement (Optional):
+Decisioning requires navigating SecureChange UI and slows throughput.
+
+Acceptance Criteria:
+1. Modal offers “Approve”, “Deny”, and “Request Info” (moves to Story 4 UX if email needed).
+2. Approvals/denials posted to SecureChange via API with required comments/reason codes.
+3. High‑risk changes require a secondary confirmation step or 2nd approver (configurable).
+4. Decision result updates the Slack thread and logs to Splunk with full audit trail.
+5. Idempotent: duplicate clicks don’t create duplicate transitions.
+
+Definition of Done:
+- Decision actions fully operational UAT→Prod.
+- Negative tests for unauthorized actions pass.
+
+Notes / Additional Context:
+Include ephemeral error messages for failure paths and guidance for remediation.
+
+Associated with Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Associated with Tasks:
+See task files prefixed with Task_S3_*

@@ -1,0 +1,40 @@
+User Story Title:
+View request details in Slack
+
+User Story Description:
+As a firewall rule analyst, I want to review the details from within Slack so I can make risk decisions without logging into SecureChange.
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Integrations
+
+Business Outcome:
+Reduce friction and switching costs; faster and more consistent decisions.
+
+Problem Statement (Optional):
+Analysts must context switch to multiple tools to gather needed information.
+
+Acceptance Criteria:
+1. Slack message includes an “Expand details” button opening a modal with full context: flows, source/dest objects, service groups, justification, change history snapshot, risk signals, related assets/owners (if available).
+2. PII/PHI redacted per policy.
+3. Modal includes link-outs to SecureChange and Splunk ticket view.
+4. Modal loads ≤2s with cached/async enrichment (asset owner, CMDB).
+5. Access control: only authorized analysts can open sensitive modals.
+
+Definition of Done:
+- Modal implemented and security-tested.
+- Telemetry to Splunk logs open/close events and fields viewed.
+
+Notes / Additional Context:
+Design for dark/light mode, and mobile Slack compatibility when practical.
+
+Associated with Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Associated with Tasks:
+See task files prefixed with Task_S2_*

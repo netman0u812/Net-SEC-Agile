@@ -1,0 +1,32 @@
+Task Title:
+2nd Approver/High-Risk Guardrail
+
+Task Description:
+Implement configurable rule to require 2nd approval when criteria met (e.g., any/any, internet exposure, high ports, prod segments).
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – Governance
+
+Associated User Story:
+Story 3 – Approve/Deny from Slack
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Risk criteria defined; Slack identities of second-approver group
+
+Task Steps:
+1) Define policy; 2) Implement checks; 3) Prompt 2nd approver in Slack; 4) Record audit; 5) Override controls.
+
+Acceptance Criteria:
+Secondary approval enforced where required; audit trail recorded in Splunk and SecureChange comment.
+
+Definition Of Done:
+Validations pass; governance sign-off acquired.

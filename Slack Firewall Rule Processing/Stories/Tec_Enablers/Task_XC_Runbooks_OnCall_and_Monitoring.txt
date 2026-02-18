@@ -1,0 +1,32 @@
+Task Title:
+Runbooks, On‑Call & Monitoring
+
+Task Description:
+Dashboards (Splunk), alerts for failures (HEC errors, Slack API failures, Tufin API errors).
+
+Creator:
+<Your Name>
+
+Status:
+Proposed → In Progress → Done
+
+Owner:
+SecEng – SRE
+
+Associated User Story:
+Cross-cutting (applies to all stories)
+
+Associated Epic:
+Implement automated Slack alerting and in‑Slack decisioning for Tufin firewall rule requests, including analysis, approve/deny, and optional user email.
+
+Pre‑Requisites / Dependencies:
+Telemetry in Splunk; paging system
+
+Task Steps:
+1) Build dashboards; 2) Define alerts; 3) On-call playbooks; 4) DR tests.
+
+Acceptance Criteria:
+RTO/RPO targets documented; paging integrated.
+
+Definition Of Done:
+Runbooks published; alerts active.

@@ -1,0 +1,12 @@
+Open Questions (to finalize):
+
+1. Tufin API surface: Do we have webhook support for SecureChange state changes, or should we implement polling? Which version of Tufin are we on?
+2. Email channel: Should we use Microsoft Graph (preferred for audit and modern auth) or SMTP relay? Any constraints?
+3. Slack delivery pattern: Single channel, per‑team channels, or DM to on‑duty analyst with channel summaries? Any on‑call integration?
+4. RBAC mapping source: Should we map Slack user → Azure AD UPN → SecureChange analyst list, or another directory?
+5. Splunk details: Target index/sourcetype and HEC endpoint? Any data residency/redaction rules we must enforce?
+6. High‑risk criteria: What conditions require 2nd approval (e.g., any/any, internet egress/ingress, prod networks, privileged ports)?
+7. Automation scope (phase 1): Which “common requests” are safe to auto-approve or auto-deny initially? Do we start in shadow mode for 2–4 weeks?
+8. Audit requirements: Any SOX/ISO constraints on evidence storage, retention periods, or required evidence fields?
+9. Change management: Environments and deployment order? Do we need CAB approval for production cutover?
+10. SLA targets: Confirm the alerting latency target and time-to-decision goals to tune retries and caching.
