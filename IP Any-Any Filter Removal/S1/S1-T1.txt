@@ -1,0 +1,22 @@
+Task Title: Run Splunk queries for Any‑Any rule (Shea DC)
+Task Description: Execute Splunk queries focused on Shea DC Any‑Any rule traffic and export results.
+Creator: Michael Martin
+Status: Not Started
+Owner: Arthur
+Associated User Story: User Story 1
+Associated Epic: Firewall Rule Reduction / Shea DC Remediation
+Pre‑Requisites / Dependencies:
+- Proxy IP list sent by Jeelani
+Task Steps:
+- Apply Splunk search query for Any‑Any rule
+- Exclude provided proxy IPs
+- Extract raw logs
+- Summarize top talkers / ports / protocols
+- Deliver extracts to team
+Acceptance Criteria:
+- Data delivered and validated as complete
+Required Evidence / Artifacts Required?
+- Log export files (CSV or Splunk export)
+Required Evidence / Artifacts (If Needed):
+Definition Of Done:
+- Logs received and posted to shared folder

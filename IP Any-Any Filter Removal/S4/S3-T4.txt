@@ -1,0 +1,22 @@
+Task Title: Review Shea Firewall Rule Set
+Task Description: Review extracted Splunk data and evaluate Shea firewall rules (Keep/Remove/Modify).
+Creator: Michael Martin
+Status: Blocked
+Owner: Michael + Jeelani
+Associated User Story: User Story 3
+Associated Epic: Firewall Rule Reduction / Shea DC Remediation
+Pre‑Requisites / Dependencies:
+- T-001 / T-002 complete
+Task Steps:
+- Analyze dataset
+- Categorize rules
+- Document rationale
+- Prepare recommendations
+Acceptance Criteria:
+- Rule list with rationale completed
+Required Evidence / Artifacts Required?
+- Reviewed spreadsheet
+- Rule review notes
+Required Evidence / Artifacts (If Needed):
+Definition Of Done:
+- Rule review document posted

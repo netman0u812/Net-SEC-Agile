@@ -1,0 +1,21 @@
+Task Title: Conduct IP‑to‑Application Mapping with SRE and IMT
+Task Description: Map IPs to application owners with SRE (Ben) and IMT (Jeff).
+Creator: Michael Martin
+Status: Not Started
+Owner: Jeelani
+Associated User Story: User Story 4
+Associated Epic: Firewall Rule Reduction / Application Mapping
+Pre‑Requisites / Dependencies:
+- T-001 / T-002 outputs
+Task Steps:
+- Collect IP list
+- Engage SRE and IMT
+- Resolve unknowns
+- Publish mapping
+Acceptance Criteria:
+- All IPs mapped or dispositioned
+Required Evidence / Artifacts Required?
+- Mapping sheet
+Required Evidence / Artifacts (If Needed):
+Definition Of Done:
+- Mapping uploaded and validated

@@ -1,0 +1,14 @@
+User Story Title: Refine Shea‑specific firewall rules based on extracted Splunk data
+User Story Desctiption: As the security engineering team, we need to review extracted Splunk data and refine the Shea firewall rules accordingly.
+Creator: Michael Martin
+Status: Blocked (pending Splunk data)
+Owner: Michael + Jeelani + Arthur
+Business Outcome: Reduction of unnecessary access and improved Zero Trust alignment.
+Acceptance Criteria:
+- Extracted Splunk data reviewed
+- Rules categorized into Keep / Remove / Modify
+- Risk justification provided for each rule decision
+Definition of Done:
+- Completed rule review document posted to the team
+Assiocated with Epic: Firewall Rule Reduction / Shea DC Remediation
+Assiocated with Tasks: T-004, T-005

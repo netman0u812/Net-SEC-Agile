@@ -1,0 +1,14 @@
+User Story Title: Provide proxy IP list for exclusion in Splunk firewall log extractions
+User Story Desctiption: As the security team, we must ensure Splunk queries exclude proxy IPs to avoid noise and ensure accurate Any‑Any rule analysis.
+Creator: Michael Martin
+Status: Complete (Proxy list already sent)
+Owner: Jeelani
+Business Outcome: Cleaner, accurate Splunk output and reduced false positives.
+Acceptance Criteria:
+- Proxy IP list documented and shared
+- Arthur confirms receipt
+- List available for all future log pulls
+Definition of Done:
+- Proxy list confirmed as received by Arthur
+Assiocated with Epic: Firewall Rule Reduction / Shea DC Remediation
+Assiocated with Tasks: T-003

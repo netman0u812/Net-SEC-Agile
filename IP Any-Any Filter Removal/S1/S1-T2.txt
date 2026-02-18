@@ -1,0 +1,22 @@
+Task Title: Validate Splunk Query Output
+Task Description: Validate completeness and integrity of extracted Splunk dataset.
+Creator: Michael Martin
+Status: Not Started
+Owner: Michael
+Associated User Story: User Story 1
+Associated Epic: Firewall Rule Reduction / Shea DC Remediation
+Pre‑Requisites / Dependencies:
+- T-001 completed
+Task Steps:
+- Verify timeframe coverage
+- Spot‑check samples vs. Splunk UI
+- Confirm proxy exclusions applied
+- Confirm export format is usable
+- Acknowledge dataset readiness to team
+Acceptance Criteria:
+- Dataset completeness confirmed and documented
+Required Evidence / Artifacts Required?
+- Validation notes / checklist
+Required Evidence / Artifacts (If Needed):
+Definition Of Done:
+- Validation summary posted to shared folder

@@ -1,0 +1,125 @@
+
+Epic Title:
+Decommission Firewall Rule #902 (IP Any‑Any) through Traffic Attribution, Application Mapping, and Rule Migration
+
+Epic Description:
+This epic covers the analysis, identification, coordination, and remediation activities required to safely remove Firewall Rule #902 — an IP Any‑Any rule located deep in a rulebase of over 5,000 rules. Because rules below #902 are implicitly permitted due to this broad rule, it creates excessive traffic volume and enables unintended access paths.
+
+The initiative leverages cloud network object sets (mapping cloud services and geo‑location attributes) to categorize traffic and identify internal applications and user communities. Through Splunk log analysis, application-owner engagement, and validation of use cases, the goal is to replace all necessary traffic paths with appropriately scoped firewall rules and safely retire the IP Any‑Any rule.
+
+Creator:
+Michael Martin
+
+Status:
+Draft / Ready for Review
+
+Owner:
+Security Engineering – Michael Martin (Lead)
+Supporting: Jeelani, Arthur, SRE (Ben Saleja), IMT (Jeff Harlecha)
+
+Business Outcome:
+- Eliminate broad permissive access (IP Any‑Any) and reduce attack surface.
+- Restore proper rulebase hygiene by ensuring downstream rules are evaluated.
+- Improve visibility into actual application dependencies through object‑set qualification.
+- Ensure every connection permitted today is properly owned, justified, and migrated to least‑privilege firewall rules.
+- Reduce Splunk traffic noise by removing a rule responsible for an unusually large share of event volume.
+
+Problem Statement (Optional):
+Firewall Rule #902, an IP Any‑Any rule, allows any internal system to reach any destination. Because it sits early in a 5,000+ rulebase, all rules positioned below it are effectively bypassed. This results in uncontrolled traffic flows, excessive Splunk consumption, and risk exposure. Application owners have no visibility into their dependencies, and remediation requires correlating high‑volume logs to owning teams and use cases.
+
+Scope:
+✔ Splunk extraction and analysis of Rule #902 traffic
+✔ Application & user identification via cloud object set qualification
+✔ Mapping destinations to cloud services and geo‑locations
+✔ Identifying and engaging application owners/SRE/IMT
+✔ Validation of each use case with business partners
+✔ Submission and tracking of firewall rule requests per application
+✔ Migration of required access to least‑privilege firewall rules
+✔ Deletion of Rule #902 once all dependencies are replaced
+
+Out of Scope (Optional):
+✘ Redesign of entire firewall rulebase
+✘ Architecture changes unrelated to Rule #902
+✘ Network segmentation changes outside validated use cases
+✘ Cloud security posture changes not tied to observed traffic
+
+Success Metrics / KPIs:
+- 100% attribution of Rule #902 traffic to applications/users
+- 0 unknown flows remaining before decommissioning
+- Reduction in Splunk events attributed to Rule #902 by >90%
+- All validated use cases migrated to least‑privilege rules
+- Rule #902 removed from the firewall rulebase
+- No business disruption during and after migration
+
+Assumptions:
+- Splunk logging for Rule #902 is complete and accurate
+- Cloud network object sets remain accurate for service/geo classification
+- Application owners respond promptly to validation requests
+- Network engineering is available to implement new rule requests
+
+Dependencies:
+- Splunk log extraction (Arthur)
+- Proxy exclusion list (Jeelani)
+- Consolidated traffic spreadsheet (Jeelani)
+- Application mapping via SRE + IMT
+- Firewall Engineering availability for rule changes
+- Business owners providing confirmation on use cases
+
+High‑Level Deliverables:
+1. Splunk dataset identifying all flows hitting Rule #902
+2. Classified traffic using cloud object sets (service, geo, type)
+3. Application & user mapping workbook
+4. Validated use cases from all impacted teams
+5. Firewall rule request packages per application
+6. New least‑privilege rules deployed
+7. Final readiness validation report
+8. Removal of Rule #902
+
+Child User Stories:
+- S1: Splunk Log Extraction for Any‑Any Rule (Shea DC)
+- S2: Proxy IP Exclusion for Splunk Queries
+- S3: Firewall Rule Review & Refinement
+- S4: IP‑to‑Application Owner Mapping
+- S5: Splunk Log Extension Request (If Needed)
+- S6: Consolidated Spreadsheet Review
+
+Risks & Mitigations:
+Risk: Application owners do not respond
+Mitigation: Escalation to directors, IMT support
+
+Risk: High traffic volume overwhelms Splunk
+Mitigation: Use filtered, time‑bounded queries + proxy exclusions
+
+Risk: Unknown flows with no clear ownership
+Mitigation: Engage IMT + Network Engineering for packet capture or DNS analysis
+
+Risk: Rule migration delays impact decommission timeline
+Mitigation: Parallelize rule‑writing efforts per application group
+
+Risk: Business disruption due to missed flows
+Mitigation: Validate with owners before migration; test rules in staging where applicable
+
+Stakeholders / Roles (Optional):
+- Security Engineering
+- Network Engineering
+- SRE (Ben Saleja)
+- IMT (Jeff Harlecha)
+- Application Owners
+- Cyber Leadership
+
+Approvals Needed (Optional):
+- Security Engineering
+- Network Engineering Change Control
+- Application Owners
+- Platform Leadership
+
+Definition of Done:
+- All traffic hitting Rule #902 is fully identified and mapped
+- All valid flows are migrated to least‑privilege rules
+- No unknown or unvalidated flows remain
+- Final validation confirms zero dependency on Rule #902
+- Rule #902 is removed from production firewalls
+- All documentation (mapping, matrices, rule replacements) stored in central repository
+
+Notes / Additional Context:
+The creation of cloud‑mapped object sets (cloud service categories, geo‑location grouping, and normalized destination attributes) significantly accelerated the identification phase by classifying Rule #902 traffic without requiring manual destination analysis. This framework may become a repeatable model for analysis of additional overly permissive rules.

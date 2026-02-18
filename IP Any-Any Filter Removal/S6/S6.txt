@@ -1,0 +1,14 @@
+User Story Title: Review consolidated rule analysis spreadsheet
+User Story Desctiption: As the security engineering team, we must review the spreadsheet provided by Jeelani and provide comments or corrections.
+Creator: Michael Martin
+Status: In Progress
+Owner: Arthur + Michael
+Business Outcome: Accurate view of existing Shea firewall rules for remediation.
+Acceptance Criteria:
+- Spreadsheet reviewed
+- Comments added
+- Version reposted
+Definition of Done:
+- Team‑approved spreadsheet published
+Assiocated with Epic: Firewall Rule Reduction / Shea DC Remediation
+Assiocated with Tasks: T-008

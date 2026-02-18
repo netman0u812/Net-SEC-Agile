@@ -1,0 +1,20 @@
+Task Title: Produce Rule Remediation Matrix
+Task Description: Create actionable remediation matrix (owners, timelines, changes).
+Creator: Michael Martin
+Status: Not Started
+Owner: Michael
+Associated User Story: User Story 3
+Associated Epic: Firewall Rule Reduction / Shea DC Remediation
+Pre‑Requisites / Dependencies:
+- T-004
+Task Steps:
+- Draft matrix
+- Align with stakeholders
+- Publish to share
+Acceptance Criteria:
+- Matrix approved by security team
+Required Evidence / Artifacts Required?
+- Remediation matrix
+Required Evidence / Artifacts (If Needed):
+Definition Of Done:
+- Published and communicated

@@ -1,0 +1,22 @@
+Task Title: Submit Splunk Ticket for Extended Log Extraction
+Task Description: If needed, file a ticket to Splunk team for extended timeframe or additional fields.
+Creator: Michael Martin
+Status: Not Started
+Owner: Jeelani
+Associated User Story: User Story 5
+Associated Epic: Firewall Rule Reduction / Shea DC Remediation
+Pre‑Requisites / Dependencies:
+- Assessment of initial dataset
+Task Steps:
+- Draft request
+- Submit ticket
+- Track to completion
+- Deliver dataset
+Acceptance Criteria:
+- Dataset received per request
+Required Evidence / Artifacts Required?
+- Ticket number
+- Delivered exports
+Required Evidence / Artifacts (If Needed):
+Definition Of Done:
+- Exports posted and acknowledged

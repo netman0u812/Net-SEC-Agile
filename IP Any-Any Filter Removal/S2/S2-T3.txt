@@ -1,0 +1,18 @@
+Task Title: Provide Proxy IP List
+Task Description: Share proxy IP address list with Arthur for exclusion in Splunk queries.
+Creator: Michael Martin
+Status: Complete
+Owner: Jeelani
+Associated User Story: User Story 2
+Associated Epic: Firewall Rule Reduction / Shea DC Remediation
+Task Steps:
+- Share link and confirm delivery
+- Ensure list is accessible for future pulls
+Acceptance Criteria:
+- Arthur confirms receipt
+Required Evidence / Artifacts Required?
+- Proxy IP list link
+Required Evidence / Artifacts (If Needed):
+Definition Of Done:
+- Confirmation captured in notes/email
+Notes / Additional Context: Provided already

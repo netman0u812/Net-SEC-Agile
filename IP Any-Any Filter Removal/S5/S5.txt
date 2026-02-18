@@ -1,0 +1,14 @@
+User Story Title: Engage Splunk engineering team if extended log extraction is required
+User Story Desctiption: As security engineering, we need additional Splunk data extracted if the initial dataset is incomplete or timeframe needs extension.
+Creator: Michael Martin
+Status: Not Started
+Owner: Jeelani
+Business Outcome: Ensures complete visibility for rule analysis.
+Acceptance Criteria:
+- Ticket submitted to Splunk team
+- Assigned analyst confirms timeline
+- Extracted logs received
+Definition of Done:
+- Splunk extract delivered and validated
+Assiocated with Epic: Firewall Rule Reduction / Shea DC Remediation
+Assiocated with Tasks: T-007

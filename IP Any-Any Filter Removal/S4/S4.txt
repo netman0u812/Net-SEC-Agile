@@ -1,0 +1,14 @@
+User Story Title: Map traffic‑source/destination IPs to application owners
+User Story Desctiption: As the platform security team, we must map IPs seen in Splunk traffic to application owners using SRE (Ben Saleja) and IMT (Jeff Harlecha) support.
+Creator: Michael Martin
+Status: Blocked (awaiting IP list from Splunk data)
+Owner: Jeelani
+Business Outcome: Clear ownership for firewall rule decisions and reduced orphaned rules.
+Acceptance Criteria:
+- All IPs mapped to application teams
+- Unknown IP list created and escalated
+- Final mapping shared with SRE + IMT
+Definition of Done:
+- Completed mapping sheet uploaded and validated
+Assiocated with Epic: Firewall Rule Reduction / Application Mapping
+Assiocated with Tasks: T-006

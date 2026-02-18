@@ -1,0 +1,19 @@
+User Story Title: Extract and analyze Shea DC Any‑Any firewall rule logs from Splunk
+User Story Desctiption: As a security engineering team, we need Splunk queries executed for the Any‑Any rule focusing on the Shea data center so that we can review actual traffic patterns and refine unnecessary firewall rules.
+Creator: Michael Martin
+Status: Draft / Ready for Grooming
+Owner: Arthur (Primary), with support from Michael
+Business Outcome: Improved firewall hygiene, reduced unnecessary rule exposure, and better insight into Shea DC traffic.
+Problem Statement (Optional): Firewall Any‑Any rules must be validated based on real log data to determine unused or overly broad rules.
+Acceptance Criteria:
+- Splunk queries executed using the provided proxy‑excluded IP list
+- Raw logs and summarized output delivered to the team
+- Data export covers the required timeframe
+- Data available for downstream rule review
+Definition of Done:
+- Log extracts delivered
+- Confirmed receipt by Jeelani + security team
+- Data validated for completeness
+Notes / Additional Context: Depends on proxy IP list exclusion and Splunk access.
+Assiocated with Epic: Firewall Rule Reduction / Shea DC Remediation
+Assiocated with Tasks: T-001, T-002

@@ -1,0 +1,18 @@
+Task Title: Review Consolidated Spreadsheet
+Task Description: Review Jeelani’s consolidated spreadsheet and provide comments.
+Creator: Michael Martin
+Status: In Progress
+Owner: Arthur + Michael
+Associated User Story: User Story 6
+Associated Epic: Firewall Rule Reduction / Shea DC Remediation
+Task Steps:
+- Open latest version
+- Add comments
+- Repost updated file
+Acceptance Criteria:
+- Reviewed and reposted with comments
+Required Evidence / Artifacts Required?
+- Updated spreadsheet
+Required Evidence / Artifacts (If Needed):
+Definition Of Done:
+- Team‑approved spreadsheet published
